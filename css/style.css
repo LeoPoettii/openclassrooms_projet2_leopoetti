@@ -142,6 +142,30 @@ main {
     border-radius: 15px 0px 0px 15px;
 }
 
+form{
+    width: 195px;
+    padding: 0px 24px 0px 24px;
+    border-top: 1px var(--main-bg-color) solid;
+    border-bottom: 1px var(--main-bg-color) solid;
+}
+
+input {
+    border: none;
+    width: auto;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: #000000;
+}
+
 #icon_rechercher {
     display: none;
 }
@@ -180,6 +204,10 @@ main {
     height: 50px;
     gap: 10px;
     padding: 4px 19px 4px 19px;
+}
+
+.filter:hover{
+    background-color: var(--filter-bg-color);
 }
 
 #icon_ticket {
@@ -436,6 +464,16 @@ footer {
         width: 100%;
     }
 
+    #ul_header{
+        gap: 0;
+    }
+
+    .li_header{
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px var(--main-bg-color) solid;
+    }
+
     .li_header:hover {
         color: var(--main-color);
         border-bottom: 2px var(--main-color) solid;
@@ -488,7 +526,7 @@ footer {
         background-color: var(--main-color);
     }
 
-    #search_bar_marseille {  /***********Revoir cette partie **************/
+    #search_bar_marseille {
         padding-left: 9px;
         padding-right: 40px;
     }
