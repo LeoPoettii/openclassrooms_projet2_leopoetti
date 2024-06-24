@@ -555,6 +555,10 @@ footer {
         flex-direction: column;
     }
 
+    .box_tablette {
+        width: 100%;
+    }
+
     .img_sponsored{
         width: 33%;
     }
