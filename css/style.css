@@ -426,8 +426,12 @@ footer {
     }
 
     .box_sponsored {
-        width: 274px;
+        width: auto;
         height: 146px;
+    }
+
+    .box_tablette {
+        width: 33%;
     }
 
     .img_sponsored {
@@ -580,6 +584,10 @@ footer {
     #container_activite {
         display: flex;
         flex-direction: column;
+    }
+
+    #activite_dame{
+        object-position: top;
     }
 
     footer{
