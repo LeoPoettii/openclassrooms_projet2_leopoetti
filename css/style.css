@@ -19,6 +19,7 @@ html {
 
 body {
     padding: 0px 50px 0px 50px; /*Grâce aux cotations on voit que toutes la page à un padding à gauche et à droite de 50px*/
+    overflow-x: hidden;
 }
 
 
@@ -144,7 +145,7 @@ main {
 
 form{
     width: 195px;
-    padding: 0px 24px 0px 24px;
+    padding: 0px 0px 0px 24px;
     border-top: 1px var(--main-bg-color) solid;
     border-bottom: 1px var(--main-bg-color) solid;
 }
@@ -454,7 +455,9 @@ footer {
 /* Téléphone */
 
 @media screen and (max-width: 768px) {
-
+    html {
+        width: 100%;
+    }
     body {
         padding: 0px;
     }
@@ -497,8 +500,12 @@ footer {
         padding : 0px 0px 15px 0px;
     }
 
+    #search_bar{
+        width: 100%;
+        overflow: hidden;
+    }
+
     #info_group{
-        align-items: center;
         padding: 30px 20px 0px 20px;
     }
 
@@ -506,9 +513,16 @@ footer {
         display: none;
     }
 
-    #search_bar {
-        width: auto;
+    form{
+        width: 100%;
+        min-width: 171px;
+        max-width: 1000px;
     }
+
+    #container_icon_carte{
+        width: 50px;
+    }
+
 
     #container_rechercher{
         display: flex;
@@ -540,6 +554,11 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filter{
+        padding: 0px;
     }
 
     #filtre_grid {
@@ -555,7 +574,7 @@ footer {
         flex-direction: column;
     }
 
-    .box_tablette {
+    .lien_box_sponsored {
         width: 100%;
     }
 
